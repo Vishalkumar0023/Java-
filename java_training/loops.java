@@ -172,16 +172,91 @@ import java.util.*;
 // }
 
 
-class loops{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a year to check leap year ");
-        int n = sc.nextInt();
-        if ((n % 4 == 0 && n % 100 !=0)|| n % 400 == 0){
-            System.out.println(n + " is leap year");
-        }
-        else{
-            System.out.println(n + " is not leap year");
+// class loops{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter a year to check leap year ");
+//         int n = sc.nextInt();
+//         if ((n % 4 == 0 && n % 100 != 0)|| n % 400 == 0){
+//             System.out.println(n + " is leap year");
+//         }
+//         else{
+//             System.out.println(n + " is not leap year");
+//         }
+//     }
+// }
+
+
+
+// class loops{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter a product id to check premuim or regular product");
+//         int n = sc.nextInt();
+//         int count = 0;
+
+//         for(int i = 2;i<=n;i++){
+//             if(n % i == 0){
+//                 count++;
+//             }            
+//         }
+//         if (n == 1){
+//             System.out.println(n + " "+ "is a regular product");
+//         }
+//         else if (count < 2){
+//                 System.out.println(n +" "+ "is premium product");
+//             }
+//             else{
+//                 System.out.println(n + " "+ "is regular product");
+//             }    
+//         }
+//     }
+
+// class loops{
+//     public static void main(String args[]){
+//         for(int i=1 ; i<=3;i++){
+//             System.out.print();
+//         }
+//         System.out.println("");
+//     }
+// }
+
+
+// class Loops {
+//     public static void main(String args[]) {
+
+//         for (int i = 1; i <= 3; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+
+//         for (int i = 2; i >= 1; i--) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+class Loops {
+    public static void main(String args[]) {
+
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4; j++) {
+
+                if (i == 1 || i == 4 || j == 1 || j == 4) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
         }
     }
 }
+        
+    
