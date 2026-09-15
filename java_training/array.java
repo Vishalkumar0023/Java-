@@ -56,14 +56,70 @@ import java.util.Arrays;
 //     }
 // }
 
-class Array {
-    public static void main(String args[]){
-        int[] arr = {3, 5, 9, 2, 1};
-        int[] even_arr = new int [(arr.length + 1) / 2];
-        for(int i = 0,j=0;i<arr.length;i += 2, j++){
-            even_arr[j] = arr[i];
-        }
-        System.out.println(Arrays.toString(even_arr));
-        }
-}
+// class Array {
+//     public static void main(String args[]){
+//         int[] arr = {3, 5, 9, 2, 1};
+//         int[] even_arr = new int [(arr.length + 1) / 2];
+//         for(int i = 0,j=0;i<arr.length;i += 2, j++){
+//             even_arr[j] = arr[i];
+//         }
+//         System.out.println(Arrays.toString(even_arr));
+//         }
+// }
+//print the even numbers
+// class Array{
+//     public static void main(String args[]){
+//         int[] arr = {3, 5, 9, 2, 1, 0};
+//         System.out.print("Even numbers in the array: ");
+//         for(int i = 0; i < arr.length; i++){
+//             if(arr[i] % 2 == 0){
+//                 System.out.print(arr[i] + " ");
+//             }
+//         }
+
+//     }
+// }
+//array is palidrome or not
+
+// class Array{
+//     public static void main(String args[]){
+//         int[] arr = {3, 5, 9, 2, 1, 0};
+//         boolean isPalindrome = true;
+//         for(int i = 0; i < arr.length / 2; i++){
+//             if(arr[i] != arr[arr.length - 1 - i]){
+//                 isPalindrome = false;
+//                 System.out.println("The array is not a palindrome.");
+//                 break;
+//             }
+//             else{
+//                 System.out.println("The array is a palindrome.");
+//             }
+//         }
+        
+//     }
+// }
+
+// rearraneg the array so that even numbers at even place or vice versa
+// class Array{
+//     public static void main(String args[]){
+//         int[] arr = {3, 5, 9, 2, 1, 0};
+//         int[] rearranged_arr = new int[arr.length];
+//         int even_index = 0;
+//         int odd_index = 1;
+//         for(int i = 0; i < arr.length; i++){
+//             if(arr[i] % 2 == 0){
+//                 rearranged_arr[even_index] = arr[i];
+//                 even_index += 2;
+//             }
+//             else{
+//                 rearranged_arr[odd_index] = arr[i];
+//                 odd_index += 2;
+//             }
+//         }
+//         System.out.println(Arrays.toString(rearranged_arr));
+//     }
+// }
+
+
+
 
