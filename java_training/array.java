@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 // class Array1{
 //     public static void main(String args[]){
 //         int[] x = {1, 2, 3, 4, 5};
@@ -40,7 +40,7 @@ import java.util.Arrays;
 // array is palidrome or not
 // rearraneg the array so that even numbers at even place or vice versa
  
-import java.util.Arrays;
+
 
 // class Array {
 //     public static void main(String args[]) {
@@ -91,10 +91,11 @@ import java.util.Arrays;
 //                 System.out.println("The array is not a palindrome.");
 //                 break;
 //             }
-//             else{
-//                 System.out.println("The array is a palindrome.");
-//             }
+//             
 //         }
+//         if(isPalindrome){
+//             System.out.println("The array is a palindrome.");
+//}
         
 //     }
 // }
@@ -103,7 +104,7 @@ import java.util.Arrays;
 // class Array{
 //     public static void main(String args[]){
 //         int[] arr = {3, 5, 9, 2, 1, 0};
-//         int[] rearranged_arr = new int[arr.length];
+//         int[] rearranged_arr = new int[(arr.length)*2];
 //         int even_index = 0;
 //         int odd_index = 1;
 //         for(int i = 0; i < arr.length; i++){
@@ -120,6 +121,61 @@ import java.util.Arrays;
 //     }
 // }
 
+// 2 sum of 2 numbers in an array
+// class Solution {
+//     public int[] twoSum(int[] nums, int target) {
+//         int[] result = new int[2];
+//         for(int i = 0; i < nums.length; i++) {
+//             for(int j = i + 1; j < nums.length; j++) {
+//                 if(nums[i] + nums[j] == target) {
+//                     result[0] = i;
+//                     result[1] = j;            
+//                 }
+//             }
+//         }
+//         return result;
+//     }
+// }
+
+// check if array is sorted or not
+// class Array {
+//     public static void main(String args[]) {
+//         int[] arr = {1, 2, 3, 4, 5};
+//         boolean isSorted = true;
+//         for (int i = 0; i < arr.length - 1; i++) {
+//             if (arr[i] > arr[i + 1]) {
+//                 isSorted = false;
+//                 System.out.println("The array is not sorted.");
+//                 break;
+//             }    
+//         }
+//         if (isSorted) {
+//             System.out.println("The array is sorted.");
+//         }  
+//     }
+// }
 
 
 
+
+// Find the second largest number in array
+
+class Array{
+    public static void main(String args[]){
+        int[] arr = {3, 5, 9, 2, 1, 0};
+        // for(int i =0;i<arr.length;i++){
+        //     for(int j=i+1;j<arr.length;j++){
+        //         if (arr[i]>arr[j]){
+        //             int temp = arr[i];
+        //             arr[i] = arr[j];
+        //             arr[j] = temp;
+        //         }
+        //     }
+        // }
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        int result = arr[(arr.length)-2];
+        System.out.println(result);
+
+    }
+}
