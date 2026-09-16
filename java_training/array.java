@@ -160,22 +160,72 @@ import java.util.*;
 
 // Find the second largest number in array
 
-class Array{
-    public static void main(String args[]){
-        int[] arr = {3, 5, 9, 2, 1, 0};
-        // for(int i =0;i<arr.length;i++){
-        //     for(int j=i+1;j<arr.length;j++){
-        //         if (arr[i]>arr[j]){
-        //             int temp = arr[i];
-        //             arr[i] = arr[j];
-        //             arr[j] = temp;
-        //         }
-        //     }
-        // }
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-        int result = arr[(arr.length)-2];
-        System.out.println(result);
+// class Array{
+//     public static void main(String args[]){
+//         int[] arr = {3, 5, 9, 2, 1, 0};
+//         // for(int i =0;i<arr.length;i++){
+//         //     for(int j=i+1;j<arr.length;j++){
+//         //         if (arr[i]>arr[j]){
+//         //             int temp = arr[i];
+//         //             arr[i] = arr[j];
+//         //             arr[j] = temp;
+//         //         }
+//         //     }
+//         // }
+//         Arrays.sort(arr);
+//         System.out.println(Arrays.toString(arr));
+//         int result = arr[(arr.length)-2];
+//         System.out.println(result);
 
+//     }
+// }
+
+// check for first sorting then find the consecutive numbers in an array
+// class Array{
+//     public static void main(String args[]){
+//         int result;
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the size of the array: ");
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         for(int i =0;i<n;i++){
+//             arr[i]= sc.nextInt();
+//         }
+//         if (arr == Arrays.sort(arr)){
+//             for(int i =0;i<n;i++){
+//                 if (arr[i]>arr[i+1]){
+//                     result = 0;
+//                     break;
+//                 }
+//             }
+//         }
+//         else {
+//             result=1;
+//         }
+//         System.out.println(result);
+//         }
+//         }
+
+class Array {
+    public static void main(String args[]) {
+        int [] nums1 = {1, 3,5,6,8};
+        int [] nums2 = {2, 4,7,9,10};
+        int[] merged_arr = new int [nums1.length+nums2.length];
+        for (int i=0;i<nums1.length;i++){
+            merged_arr[i]=nums1[i];
+        }
+        for (int i = 0;i<nums2.length;i++){
+            merged_arr[nums1.length+i]=nums2[i];
+        }
+        Arrays.sort(merged_arr);
+        System.out.println(Arrays.toString(merged_arr));
+        int n = merged_arr.length;
+
+        if(merged_arr.length % 2 == 0){
+            System.out.println(((merged_arr[(n/2)-1]+merged_arr[n/2 ])/2.0));
+
+        }else{
+            System.out.println(merged_arr[n/2]);
+        }
     }
 }
