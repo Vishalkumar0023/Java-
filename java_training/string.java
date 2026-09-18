@@ -47,25 +47,122 @@
 //     }
 // }
 import java.util.*;
-class String1{
-    public static void main(String args[]){
+// class String1{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter string to check ");
+//         String str1 = sc.nextLine();
+//         String str2 = sc.nextLine();
+//         char[] a = str1.toCharArray();
+//         char[] b = str2.toCharArray();
+//         Arrays.sort(a);
+//         Arrays.sort(b);
+//         String sorted_string_1 = new String(a);
+//         String sorted_string_2 = new String(b);
+
+//         if(sorted_string_1.equals(sorted_string_2) ){
+//             System.out.println("Anagram");
+//         }
+//         else{
+//             System.out.println("not angram");
+//         }
+
+//     }
+// }
+
+//print first Unique character
+
+// class String1{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         char unique = '\0';
+//         for(int i = 0; i < str.length(); i++){
+//             int count = 0;
+//             for(int j = 0; j < str.length(); j++){
+//                 if(str.charAt(i) == str.charAt(j)){
+//                     count++;
+//                 }
+//             }
+//             if(count == 1){
+//                 unique = str.charAt(i);
+//                 break;
+//             }
+//         }
+//         System.out.println(unique)
+        
+//     }
+// }
+
+
+//reverse word in string
+// class String1{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         for(int i=0;i<str.length();i++){
+//             char[] a = 
+//         }
+
+//     }
+// }
+
+
+
+
+
+// print longest word
+
+class String1 {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter string to check ");
-        String str1 = sc.nextLine();
-        String str2 = sc.nextLine();
-        char[] a = str1.toCharArray();
-        char[] b = str2.toCharArray();
-        Arrays.sort(a);
-        Arrays.sort(b);
-        String sorted_string_1 = new String(a);
-        String sorted_string_2 = new String(b);
-
-        if(sorted_string_1.equals(sorted_string_2) ){
-            System.out.println("Anagram");
+        String str = sc.nextLine();
+        String[] arr = str.split(" ");
+        int[] arr1 = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr1[i] = arr[i].length();
         }
-        else{
-            System.out.println("not angram");
+        int max =0;
+        String word = "";
+        for(int i=0;i<arr1.length;i++){
+            if(arr1[i] > max){
+                max = arr1[i]; 
+                word = arr[i];
+            }
+        }
+        System.out.println(word);
+    }
+}
+
+
+
+
+import java.util.Scanner;
+
+class String1 {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int max = 0, start = 0, end = 0, count = 0;
+
+        for (int i = 0; i <= str.length(); i++) {
+
+            if (i == str.length() || str.charAt(i) == ' ') {
+
+                if (count > max) {
+                    max = count;
+                    start = i - count;
+                    end = i;
+                }
+
+                count = 0;
+            } else {
+                count++;
+            }
         }
 
+        System.out.println(str.substring(start, end));
     }
 }
