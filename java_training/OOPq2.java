@@ -9,7 +9,6 @@ class Student {
     static void setCollege(String collegeName) {
         college = collegeName;
     }
-
     static void displayCollege() {
         System.out.println("College: " + college);
     }
