@@ -1,0 +1,1 @@
+// create an ionterface player with method play create a abstarct class sports perosn with commaon property name classes cricketer and footballer extends sports person and implement players  
