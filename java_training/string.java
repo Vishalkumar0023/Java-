@@ -113,26 +113,26 @@ import java.util.*;
 
 // print longest word
 
-class String1 {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        String[] arr = str.split(" ");
-        int[] arr1 = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            arr1[i] = arr[i].length();
-        }
-        int max =0;
-        String word = "";
-        for(int i=0;i<arr1.length;i++){
-            if(arr1[i] > max){
-                max = arr1[i]; 
-                word = arr[i];
-            }
-        }
-        System.out.println(word);
-    }
-}
+// class String1 {
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         String[] arr = str.split(" ");
+//         int[] arr1 = new int[arr.length];
+//         for (int i = 0; i < arr.length; i++) {
+//             arr1[i] = arr[i].length();
+//         }
+//         int max =0;
+//         String word = "";
+//         for(int i=0;i<arr1.length;i++){
+//             if(arr1[i] > max){
+//                 max = arr1[i]; 
+//                 word = arr[i];
+//             }
+//         }
+//         System.out.println(word);
+//     }
+// }
 
 
 
