@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Leetcode_1
+class Leetcode_1_hashMap
 {
     public static int[] twoSum(int[] nums,int target)
     {
